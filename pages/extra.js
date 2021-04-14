@@ -395,6 +395,7 @@ const ExtraUIContent = memo(() => {
     // console.log("Generate Email Req Body: ", reqBody);
 
     fetch("http://34.66.241.128:5000/kafka/returnPlotQueue", {
+      // mode: 'no-cors',
       method: "POST",
       headers: {
         "Content-Type": "application/json",
