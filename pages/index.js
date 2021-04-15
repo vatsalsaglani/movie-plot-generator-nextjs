@@ -7,7 +7,6 @@ import {
   useToast,
   Button,
   Box,
-  
 } from "@chakra-ui/react";
 import { useState } from "react";
 import genreData from "./jsonFiles/uniqueGenres.json";
@@ -60,7 +59,7 @@ const Home = () => {
 
       // console.log("Req Body: ", reqBody);
 
-      fetch("http://34.66.241.128:5000/api/generatePlot", {
+      fetch("https://testmyimplementation.ml/api/generatePlot", {
         // mode: "no-cors",
         method: "POST",
         headers: {
@@ -78,7 +77,6 @@ const Home = () => {
 
           setPlot(genPlots);
           setSendingGenerateReq(false);
-          
         });
     } else {
       toast({
@@ -254,11 +252,11 @@ const Home = () => {
               >
                 Try different variations 💻
               </Text>
-              <Text color = "whiteAlpha.900" mt="8px" mb="9px">
+              <Text color="whiteAlpha.900" mt="8px" mb="9px">
                 Try out plot generation with different permutations of Genre/s,
                 Actors, Directors and Ethnicity.{" "}
               </Text>
-              <Text color = "whiteAlpha.900" mt="8px" mb="9px">
+              <Text color="whiteAlpha.900" mt="8px" mb="9px">
                 You will be asked for your Email address, once we are ready with
                 the plot for your selections we will email it.{" "}
               </Text>
