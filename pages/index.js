@@ -95,6 +95,10 @@ const Home = () => {
     <ChakraProvider resetCSS>
       <Head>
         <title>Movie Plot Generator</title>
+        <meta
+          name="description"
+          content="I generate vague movie plots on the web (but sometimes they are good). But I can assure you that it will always be funny. Try to give a Genre and I will generate a plot for you. Also you can try different variations. Yes, I am slow because my master cannot afford a server with more than 2 cores to host me."
+        />
       </Head>
 
       <Container
@@ -277,6 +281,18 @@ const Home = () => {
               >
                 Try Variations 🚀
               </Button>
+            </Container>
+            <Container mt="50px">
+              <Text mt="25px" fontSize="xs" color="whiteAlpha.500">
+                Developed by{" "}
+                <a target="_blank" href="https://twitter.com/saglanivatsal">
+                  @saglanivatsal
+                </a>{" "}
+                😅
+              </Text>
+              <Text mb="25px" fontSize="xs" color="whiteAlpha.500">
+                Have Fun and wear a mask 😷
+              </Text>
             </Container>
           </Container>
         </Container>
